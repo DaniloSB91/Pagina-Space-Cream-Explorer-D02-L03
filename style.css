@@ -1,0 +1,23 @@
+:root {
+    /* Paleta de cores */
+    --logo-background: #4A4E69;
+    --body-background: #EFF1FF;
+    --h1-background: #CBC0D3;
+    --span-background: #FEEAFA;
+
+    --h1-color: #fff;
+    --span-color: #4A4E69;
+    --p-color: #23053A;
+
+    /* Fontes */
+
+    --p-font: 'Palanquin', sans-serif;
+    --h1-font: 'Staatliches', cursive;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
