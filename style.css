@@ -14,6 +14,9 @@
     --p-font: 'Palanquin', sans-serif;
     --h1-font: 'Staatliches', cursive;
 
+    /* Tamanho do REM = 10 px*/
+
+    font-size: 62.5%;
 }
 
 * {
@@ -21,3 +24,80 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: var(--body-background);
+
+}
+
+body::before {
+    content: '';
+    width: 100vw;
+    height: 28rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: var(--logo-background);
+}
+
+.page {
+    width: 38.4rem;
+    margin: 0 auto;
+
+}
+
+header {
+    padding-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    /* min-width: 137px; */
+}
+
+header .h1-wrapper {
+    background: var(--h1-background);
+    width: 100%;
+
+
+    padding: 8px 0;
+    margin-top: 3.2rem;
+
+}
+
+header h1 {
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: 4rem;
+    line-height: 3.4rem;
+
+    text-align: center;
+
+    letter-spacing: 0.05em;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.products-wrapper {
+    width: 32rem;
+    margin: 0 auto;
+
+}
+
+p {
+    color: var(--p-color);
+    font-family: var(--p-font);
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    margin: 5rem 0;
+    
+}
+
